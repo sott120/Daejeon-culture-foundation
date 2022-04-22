@@ -1,25 +1,25 @@
 /* 공통css */
-.w1200{
+
+.w1200 {
     width: 1200px;
     margin: auto;
 }
 
-.yellow{
+.yellow {
     color: #ffc000;
 }
 
-.pink{
-    color:  #ee0f62;
+.pink {
+    color: #ee0f62;
 }
 
-.blue{
+.blue {
     color: #2f6bb1;
 }
 
 /* //공통css */
 
-
-header{
+header {
     width: 100%;
     height: 125px;
     padding: 30px 65px;
@@ -29,17 +29,17 @@ header{
     position: relative;
 }
 
-h1{
+header h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
 
-header >ul{
+header > ul {
     display: flex;
 }
 
-.link_nav li{
+.link_nav li {
     min-width: 110px;
     height: 30px;
     line-height: 28px;
@@ -47,7 +47,7 @@ header >ul{
     /* 보더2px빠짐 */
     margin: 0 5px;
 }
-.link_nav a{
+.link_nav a {
     display: block;
     width: 100%;
     height: 100%;
@@ -56,21 +56,21 @@ header >ul{
     text-align: center;
 }
 
-.link_nav li:nth-child(1){
+.link_nav li:nth-child(1) {
     border: 1px solid #ee0f62;
 }
-.link_nav li:nth-child(2){
+.link_nav li:nth-child(2) {
     border: 1px solid #2f6bb1;
 }
-.link_nav li:nth-child(3){
+.link_nav li:nth-child(3) {
     border: 1px solid #ffc000;
 }
 
-.util_nav li:first-child{
+.util_nav li:first-child {
     display: flex;
 }
 
-.util_nav li:first-child >a{
+.util_nav li:first-child > a {
     display: block;
     width: 28px;
     height: 23px;
@@ -82,16 +82,16 @@ header >ul{
     color: #bebebe;
 }
 
-.util_nav li> a.font_p{
+.util_nav li > a.font_p {
     /*붙여쓰면 a 중 class가 font_p */
     border-left: 1px solid #bebebe;
 }
 
-.user{
+.user {
     margin: 0 38px 0 30px;
 }
 
-.user >a{
+.user > a {
     display: block;
     color: #000;
     font-size: 14px;
@@ -99,7 +99,7 @@ header >ul{
     font-weight: 700;
 }
 
-.search >a{
+.search > a {
     display: block;
     width: 16px;
     height: 16px;
@@ -109,24 +109,24 @@ header >ul{
 
 /* nav start */
 
-nav{
+nav {
     position: sticky;
     top: 0;
     background-color: #fff;
     z-index: 100;
 }
 
-nav >ul{
+nav > ul {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
 }
 
-nav >ul >li{
+nav > ul > li {
     width: 16.666%;
 }
 
-nav >ul >li>a{
+nav > ul > li > a {
     display: block;
     width: 100%;
     height: auto;
@@ -138,32 +138,139 @@ nav >ul >li>a{
     box-sizing: border-box;
 }
 
-.btn_nav{
+.btn_nav {
     position: absolute;
     width: 26px;
     height: 20px;
     top: 50%;
     right: 65px;
     transform: translateY(-50%);
-    
 }
 
-
-.btn_nav span{
-    display: inline-block;
+.btn_nav span {
+    display: block;
     height: 2px;
     float: right;
     background-color: #000;
     margin-bottom: 7px;
 }
-.btn_nav span:first-child{
+.btn_nav span:first-child {
     width: 26px;
 }
 
-.btn_nav span:nth-child(2){
+.btn_nav span:nth-child(2) {
     width: 21px;
 }
 
-.btn_nav span:last-child{
+.btn_nav span:last-child {
     width: 15px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: #333;
+}
+.f_top {
+    border-bottom: 1px solid #717171;
+}
+
+.f_top > ul {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.f_top li {
+    width: 200px;
+    text-align: center;
+}
+
+.f_top li > a {
+    display: block;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.f_top li.btn_b {
+    display: inline-block;
+    width: 130px;
+    padding: 2px 0;
+    border: 1px solid #51b5ff;
+    border-radius: 20px;
+    color: #51b5ff;
+}
+
+.f_bot > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+
+.f_bot h1 {
+    width: 200px;
+    height: 100px;
+}
+
+address {
+    width: calc(100% - 340px);
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.4);
+}
+address li:first-child {
+    margin-bottom: 17px;
+}
+
+address li span {
+    font-weight: 400;
+    color: #fff;
+}
+
+.f_mark {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1290px) {
+    nav > ul {
+        justify-content: center;
+    }
+    nav > ul > li {
+        width: 12.916666%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .dis_none {
+        display: none;
+    }
+
+    .w1200 {
+        width: 100%;
+    }
+
+    header > ul {
+        position: absolute;
+        margin: auto;
+    }
+
+    /* footer */
+
+    .f_top > ul {
+        flex-wrap: wrap;
+    }
+
+    .f_top li {
+        width: 33.333%;
+        margin-bottom: 30px;
+    }
+    .btn_b {
+        margin: 0 118px;
+    }
+
+    address span {
+        display: block;
+    }
 }
