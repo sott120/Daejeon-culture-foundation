@@ -1,4 +1,9 @@
 /* 공통css */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* 높이값이없어서 그냥 overflow: hidden 불가능 */
+}
 
 .w1200 {
     width: 1200px;
@@ -17,6 +22,13 @@
     color: #2f6bb1;
 }
 
+.pc_none {
+    display: none;
+}
+
+.mb_100 {
+    margin-bottom: 100px;
+}
 /* //공통css */
 
 header {
@@ -191,7 +203,7 @@ footer {
     font-size: 14px;
 }
 
-.f_top li.btn_b {
+.f_top li a.btn_b {
     display: inline-block;
     width: 130px;
     padding: 2px 0;
@@ -233,44 +245,114 @@ address li span {
     justify-content: space-between;
 }
 
-@media only screen and (max-width: 1290px) {
-    nav > ul {
-        justify-content: center;
-    }
-    nav > ul > li {
-        width: 12.916666%;
-    }
-}
+/******* start max-width 1200px ********/
 
 @media only screen and (max-width: 1199px) {
-    .dis_none {
-        display: none;
+    .mo_none {
+        display: none !important;
+    }
+
+    .pc_none {
+        display: block;
     }
 
     .w1200 {
         width: 100%;
     }
 
-    header > ul {
+    header {
+        flex-direction: column;
+        padding: 8px 4px;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        width: 114px;
+        top: 54px;
+        left: 12px;
+        transform: translate(0);
+    }
+
+    header h1 img {
+        width: 100%;
+    }
+    .link_nav {
+        justify-content: center;
+    }
+    .util_nav {
+        justify-content: flex-end;
+    }
+    .user {
+        margin: 0;
+    }
+    nav {
+        height: 40px;
+    }
+    .btn_nav {
+        right: 4px;
+    }
+    .m_search {
         position: absolute;
-        margin: auto;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 266px;
+        border: 1px solid #d2d2d2;
+        border-radius: 26px;
+        padding-left: 20px;
+    }
+    .m_search > input {
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    .m_search a {
+        display: block;
+        width: 26px;
+        height: 26px;
+        background-image: url(../img/icon/icn_search.png);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     /* footer */
-
+    footer {
+        padding-bottom: 30px;
+    }
     .f_top > ul {
         flex-wrap: wrap;
     }
-
     .f_top li {
         width: 33.333%;
-        margin-bottom: 30px;
-    }
-    .btn_b {
-        margin: 0 118px;
     }
 
-    address span {
+    .f_bot > div {
+        position: relative;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+    address {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px 0;
+    }
+
+    address li {
+        display: inline-block;
+        font-size: 2vmin;
+    }
+
+    address li:first-child {
+        width: 100%;
+    }
+    address li span {
+        padding: 3px 0 3px 200px;
         display: block;
     }
 }
+/******* end max-width 1200px ********/
