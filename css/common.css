@@ -278,6 +278,7 @@ address li span {
     }
     .link_nav {
         justify-content: center;
+        flex-wrap: wrap;
     }
     .util_nav {
         justify-content: flex-end;
@@ -291,6 +292,7 @@ address li span {
     .btn_nav {
         right: 4px;
     }
+
     .m_search {
         position: absolute;
         right: 40px;
@@ -320,26 +322,45 @@ address li span {
 
     /* footer */
     footer {
-        padding-bottom: 30px;
+        padding-bottom: 90px;
     }
     .f_top > ul {
         flex-wrap: wrap;
+        padding: 0;
     }
     .f_top li {
         width: 33.333%;
+        margin: 10px 0;
+    }
+    .f_top li > a {
+        font-size: 3vmin;
     }
 
+    .f_top li a.btn_b {
+        width: 60%;
+    }
     .f_bot > div {
         position: relative;
         align-items: flex-start;
-        padding: 10px 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    .f_bot h1 {
+        width: 20%;
+        height: auto;
+    }
+
+    .f_bot h1 img {
+        width: 100%;
     }
     address {
         width: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        padding: 10px 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
     }
 
     address li {
@@ -351,8 +372,15 @@ address li span {
         width: 100%;
     }
     address li span {
-        padding: 3px 0 3px 200px;
+        padding: 3px 0 3px 25%;
         display: block;
+    }
+
+    .f_mark {
+        width: 100px;
+    }
+    .f_mark img {
+        width: 83%;
     }
 }
 /******* end max-width 1200px ********/

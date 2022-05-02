@@ -450,12 +450,25 @@
 /******* start max-width 1200px ********/
 
 @media only screen and (max-width: 1199px) {
+    .board {
+        height: auto;
+        padding: 0;
+    }
+    .tab_third > .active_line a {
+        font-size: 25px;
+    }
+
+    .tab_third > li {
+        line-height: 29px;
+        padding: 6px 0;
+    }
     .tab_third > li > a {
         font-size: 3vmin;
     }
 
     .bnr_list {
         width: 133%;
+        padding-top: 20px;
         /* flex-flow: row nowrap; 이해필요 떨어지지않게 해주는 속성 */
     }
 
@@ -463,10 +476,15 @@
         width: 33.333%;
     }
 
+    .bnr_list > li:first-child {
+        display: none;
+    }
     .bnr_list > li:hover img {
         transform: translate(0);
     }
-
+    .bnr_dot {
+        display: none;
+    }
     .program::before {
         display: none;
     }
@@ -485,11 +503,19 @@
 
     .sec_title > h2 {
         padding-top: 24px;
+        font-size: 6.253125vmin;
     }
-
+    .sec_title p {
+        line-height: 1.272727;
+        font-size: 3.4375vmin;
+    }
     .btn_info {
         padding: 30px 0;
     }
+    .btn_info > a {
+        font-size: 3.4375vmin;
+    }
+
     .sb_tab {
         justify-content: center;
     }
@@ -500,12 +526,39 @@
     .sb_tab a {
         border-left: none;
         border-right: none;
+        font-size: 3.90625vmin;
     }
-
+    .sb_list_wrap {
+        overflow-x: scroll;
+        margin-top: 25px;
+    }
     .sb_list {
         width: calc(200% + 40px);
+        flex-wrap: nowrap;
+    }
+    .sb_list li {
+        width: 45.3125vmin;
+        flex-shrink: 0;
     }
 
+    .sb_list a {
+        height: 150px;
+    }
+    .sb_title {
+        display: block;
+        padding: 14px 10px 16px;
+        font-size: 3.59375vmin;
+    }
+    .sb_date {
+        margin: 23px auto 21px;
+        font-size: 2.8125vmin;
+    }
+
+    .sb_btn {
+        width: 38.620689%;
+        padding: 1.5px 0;
+        font-size: 3.125vmin;
+    }
     .cate {
         display: none;
     }
@@ -520,6 +573,7 @@
 
     .culture_wrap {
         background-color: #f3f3f5;
+        padding-bottom: 0;
     }
 
     .culture_wrap::before {
@@ -528,6 +582,7 @@
 
     .culture {
         flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     .culture > li {
