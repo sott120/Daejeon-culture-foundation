@@ -268,7 +268,7 @@ address li span {
 
     header h1 {
         width: 114px;
-        top: 54px;
+        top: 80px;
         left: 12px;
         transform: translate(0);
     }
@@ -280,6 +280,15 @@ address li span {
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    .link_nav li {
+        height: 23px;
+        line-height: 22px;
+    }
+    .link_nav a {
+        font-size: 12px;
+    }
+
     .util_nav {
         justify-content: flex-end;
     }
