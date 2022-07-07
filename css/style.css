@@ -341,18 +341,19 @@
 .culture > li {
     width: 200px;
     border-right: 1px solid #fff;
-    /* transform: rotateY(0deg); */
-    animation-duration: 1s;
-    animation-name: rotate;
+}
+
+.culture > li.ani {
+    animation: rotate 2s linear;
 }
 
 @keyframes rotate {
     0% {
-        transform: rotateY(270deg);
+        transform: rotateY(100deg);
     }
 
     100% {
-        transform: rotateY(360deg);
+        transform: rotateY(0deg);
     }
 }
 
