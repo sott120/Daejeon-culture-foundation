@@ -33,7 +33,7 @@ section:not(:first-child) {
     justify-content: center;
 }
 
-.inner li {
+.inner > li {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -44,16 +44,16 @@ section:not(:first-child) {
     border-left: 1px solid #fff;
 }
 
-.inner li a {
+.inner > li a {
     display: block;
     color: #fff;
     line-height: 40px;
 }
 
-.inner li:nth-child(n + 2):nth-child(-n + 4) a::after {
+.inner > li:nth-child(n + 2):nth-child(-n + 4) a::after {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 8px;
     height: 7px;
     top: 17px;
@@ -63,6 +63,27 @@ section:not(:first-child) {
     background-size: cover;
     background-position: center center;
 }
+
+.inner > li > ul {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.inner > li > ul li {
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 39px;
+    color: #2b2b2b;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 4%);
+}
+
 .sub_icon {
     display: flex;
 }
@@ -81,6 +102,22 @@ section:not(:first-child) {
 .link_to {
     display: inline-block !important;
     background-image: url(../img/sub/icn_sns.png);
+}
+
+.sns {
+    background-image: url(../img/icn_sns2.png);
+}
+.facebook {
+    background-image: url(../img/icn_sns_fb.png);
+}
+.naver {
+    background-image: url(../img/icn_sns_nb.png);
+}
+.twitter {
+    background-image: url(../img/icn_sns_tw.png);
+}
+.kakao {
+    background-image: url(../img/icn_sns_ks.png);
 }
 
 .sub_nav p {
@@ -131,7 +168,7 @@ section:not(:first-child) {
 .sub_cate_act::after {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     height: 3px;
     bottom: 0;
@@ -163,7 +200,7 @@ section:not(:first-child) {
 .sub_title::after {
     position: relative;
     display: block;
-    content: "";
+    content: '';
     width: 1px;
     height: 30px;
     background: #000;
@@ -247,7 +284,7 @@ section:not(:first-child) {
     margin: 50px 0 20px;
 }
 .list_title::before {
-    content: "● ";
+    content: '● ';
 }
 
 .address,

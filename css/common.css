@@ -30,6 +30,19 @@ body {
     margin-bottom: 100px;
 }
 /* //공통css */
+.header_wrap {
+    position: relative;
+    z-index: 9999;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.header_wrap.fix {
+    position: fixed;
+    width: 100%;
+    top: -125px;
+    background-color: #000;
+}
 
 header {
     width: 100%;
@@ -45,6 +58,28 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+}
+
+h1 img {
+    width: 100%;
+}
+
+.logo_white {
+    display: none;
+    position: absolute;
+    width: 132px;
+    height: 38px;
+    top: 45%;
+    left: 2.8125%;
+    transform: translateY(-50%);
+}
+
+nav.fix .logo_white {
+    display: block;
+}
+
+.logo_white img {
+    width: 100%;
 }
 
 header > ul {
@@ -122,16 +157,24 @@ header > ul {
 /* nav start */
 
 nav {
-    position: sticky;
-    top: 0;
+    position: relative;
     background-color: #fff;
+    border-bottom: 1px solid #fff;
     z-index: 100;
+}
+
+nav.fix {
+    background-color: #000;
 }
 
 nav > ul {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+}
+
+nav.fix > ul {
+    padding-left: 37px;
 }
 
 nav > ul > li {
@@ -150,6 +193,10 @@ nav > ul > li > a {
     box-sizing: border-box;
 }
 
+nav.fix > ul > li > a {
+    color: #fff;
+}
+
 .btn_nav {
     position: absolute;
     width: 26px;
@@ -157,6 +204,12 @@ nav > ul > li > a {
     top: 50%;
     right: 65px;
     transform: translateY(-50%);
+}
+
+.btn_nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .btn_nav span {
@@ -176,6 +229,10 @@ nav > ul > li > a {
 
 .btn_nav span:last-child {
     width: 15px;
+}
+
+nav.fix .btn_nav span {
+    background-color: #fff;
 }
 
 /* footer */
@@ -218,11 +275,11 @@ footer {
     align-items: center;
     padding: 36px 0;
 }
-
+/* 
 .f_bot h1 {
     width: 200px;
     height: 100px;
-}
+} */
 
 address {
     width: calc(100% - 340px);
@@ -247,14 +304,18 @@ address li span {
 
 /******* start max-width 1599px ********/
 @media only screen and (max-width: 1599px) {
-    nav > ul > li{
+    nav > ul > li {
         width: 15.833333%;
+    }
+
+    nav.fix > ul > li {
+        width: 12.916666%;
     }
 }
 
 /******* start max-width 1279px ********/
 @media only screen and (max-width: 1279px) {
-    nav > ul > li{
+    nav > ul > li {
         width: 12.916666%;
     }
 }
@@ -272,6 +333,25 @@ address li span {
 
     .w1200 {
         width: 100%;
+    }
+
+    .header_wrap.fix header {
+        margin: 0;
+    }
+
+    nav.fix {
+        padding: 8px 0;
+    }
+
+    nav.fix .logo_white {
+        width: 114px;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav.fix .m_search {
+        display: none;
     }
 
     header {
@@ -313,7 +393,27 @@ address li span {
         height: 40px;
     }
     .btn_nav {
+        width: 23px;
         right: 4px;
+    }
+
+    .btn_nav span {
+        display: block;
+        height: 2px;
+        float: right;
+        background-color: #000;
+        margin-bottom: 5px;
+    }
+    .btn_nav span:first-child {
+        width: 23px;
+    }
+
+    .btn_nav span:nth-child(2) {
+        width: 18px;
+    }
+
+    .btn_nav span:last-child {
+        width: 13px;
     }
 
     .m_search {
