@@ -37,22 +37,47 @@ window.addEventListener('scroll', scrollfix);
 
 //top버튼
 //top버튼 클릭실행
+let cont = document.querySelector('#for_totop');
 window.addEventListener('scroll', scrollE);
-window.addEventListener('click', function (e) {
+cont.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 //top버튼 보이기
-let cont = document.querySelector('#for_totop');
 function scrollE() {
     if (window.scrollY >= 100) {
         cont.classList.add('on');
-        //2초 뒤에 사라짐
+        //3초 뒤에 사라짐
         setTimeout(function () {
             cont.classList.remove('on');
-        }, 2000);
+        }, 3000);
     } else {
         cont.classList.remove('on');
     }
 }
+
+// 햄버거 클릭 시 네비게이션 토글
+const btnNav = document.querySelector('.btn_nav');
+const btnClose = document.querySelector('.close');
+const fullMenu = document.querySelector('.full_menu');
+const body = document.getElementsByTagName('body')[0];
+
+btnNav.addEventListener('click', function(){
+    body.classList.toggle('scrollLock');
+    fullMenu.classList.toggle('on');
+})
+// X 클릭 시 네비게이션 닫기
+btnClose.addEventListener('click', function(){
+    body.classList.remove('scrollLock');
+    fullMenu.classList.remove('on');
+})
+
+// const fullLi = document.querySelectorAll('.btn_nav');
+// const depth = document.querySelectorAll('.depth');
+// fullLi.forEach( li => {
+//     li.addEventListener('click',(index) => {
+//         console.log(depth[0])
+//         depth[index].classList.toggle('on');
+//     })    
+// });

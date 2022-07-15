@@ -5,6 +5,8 @@ body {
     /* 높이값이없어서 그냥 overflow: hidden 불가능 */
 }
 
+.scrollLock { overflow: hidden; }
+
 .w1200 {
     width: 1200px;
     margin: auto;
@@ -240,9 +242,15 @@ nav.fix .btn_nav span {
     background-color: #fff;
 }
 
+/* nav2 */
 .full_menu {
+    display: none;
     width: 100%;
     background-color: #fff;
+}
+
+.on{
+    display: block;
 }
 
 .full_menu_inner {
@@ -251,6 +259,7 @@ nav.fix .btn_nav span {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 22px;
 }
 
 .close {
@@ -323,15 +332,15 @@ nav.fix .btn_nav span {
     background-position: 12px center;
 }
 .listwrap > li:nth-child(4) > p {
-    background-image: url(../img/icn_nav3.png);
+    background-image: url(../img/icn_nav4.png);
     background-position: 11px center;
 }
 .listwrap > li:nth-child(5) > p {
-    background-image: url(../img/icn_nav4.png);
+    background-image: url(../img/icn_nav5.png);
     background-position: 9px center;
 }
 .listwrap > li:nth-child(6) > p {
-    background-image: url(../img/icn_nav5.png);
+    background-image: url(../img/icn_nav6.png);
     background-position: 12px center;
 }
 
@@ -358,8 +367,27 @@ nav.fix .btn_nav span {
 
 .listwrap > li > ul > li {
     display: inline-block;
-    width: 22%;
+    width: 23%;
     line-height: 3;
+}
+
+.listwrap > li > ul.depth >li:nth-child(2),
+.listwrap > li > ul.depth >li:nth-child(6){
+    width: 19%;
+}
+
+.listwrap > li > ul.depth >li:nth-child(3),
+.listwrap > li > ul.depth >li:nth-child(7){
+    width: 25%;
+}
+
+.listwrap > li > ul.depth >li:nth-child(4),
+.listwrap > li > ul.depth >li:nth-child(8){
+    width: 17%;
+}
+
+.listwrap > li > ul.depth >li:nth-child(9){
+    width: 12%;
 }
 
 .listwrap > li > ul > li > a {
@@ -593,6 +621,49 @@ address li span {
         background-image: url(../img/icon/icn_search.png);
         background-repeat: no-repeat;
         background-position: center center;
+    }
+
+    .listwrap{
+        height: 80vh;
+    }
+
+    .listwrap > li {
+        padding-top: 30px;
+    }
+
+    .listwrap > li:nth-child(1) {
+        padding-top: 60px;
+    }
+
+    .listwrap > li p{
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        background-size: 23px;
+    }
+    
+    .listwrap > li:nth-child(3) > p,
+    .listwrap > li:nth-child(6) > p
+    {
+        background-size: 17px;
+    }
+
+    .listwrap > li:nth-child(5) > p
+    {
+        background-size: 20px;
+    }
+
+    .listwrap > li > ul {
+        display: block;
+        width: 100%;
+    }
+
+    .listwrap > li > ul > li {
+    width: 49% !important;
+    word-break: keep-all;
+    line-height: 2;
+    font-size: 14px;
     }
 
     /* footer */
