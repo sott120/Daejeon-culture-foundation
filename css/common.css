@@ -159,7 +159,7 @@ header > ul {
 nav {
     position: relative;
     background-color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #e5e5e6;
     z-index: 100;
 }
 
@@ -218,6 +218,7 @@ nav.fix > ul > li > a {
     float: right;
     background-color: #000;
     margin-bottom: 7px;
+    transition: width 0.3s ease;
 }
 .btn_nav span:first-child {
     width: 26px;
@@ -231,10 +232,139 @@ nav.fix > ul > li > a {
     width: 15px;
 }
 
+.btn_nav a:hover span {
+    width: 26px;
+}
+
 nav.fix .btn_nav span {
     background-color: #fff;
 }
 
+.full_menu {
+    width: 100%;
+    background-color: #fff;
+}
+
+.full_menu_inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 29px;
+    top: 23px;
+    right: 23px;
+    padding: 0;
+}
+
+.close a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/icn_cross.png);
+    z-index: 1;
+}
+
+.listwrap {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.listwrap li {
+    display: inline-table;
+    width: 100%;
+    padding: 0;
+}
+
+.listwrap > li > p,
+.listwrap > li > ul {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.listwrap > li p {
+    width: 19.25%;
+    padding: 0 10px 0 54px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.listwrap > li:nth-child(1) > p {
+    background-image: url(../img/icn_nav1.png);
+    background-position: 10px center;
+}
+.listwrap > li:nth-child(2) > p {
+    background-image: url(../img/icn_nav2.png);
+    background-position: 12px center;
+}
+.listwrap > li:nth-child(3) > p {
+    background-image: url(../img/icn_nav3.png);
+    background-position: 12px center;
+}
+.listwrap > li:nth-child(4) > p {
+    background-image: url(../img/icn_nav3.png);
+    background-position: 11px center;
+}
+.listwrap > li:nth-child(5) > p {
+    background-image: url(../img/icn_nav4.png);
+    background-position: 9px center;
+}
+.listwrap > li:nth-child(6) > p {
+    background-image: url(../img/icn_nav5.png);
+    background-position: 12px center;
+}
+
+.listwrap > li:nth-child(3n-2) > p {
+    border-bottom: 1px solid #0066b2;
+    color: #0066b2;
+}
+
+.listwrap > li:nth-child(3n-1) > p {
+    border-bottom: 1px solid #e24b84;
+    color: #e24b84;
+}
+
+.listwrap > li:nth-child(3n) > p {
+    border-bottom: 1px solid #f9a51a;
+    color: #f9a51a;
+}
+
+.listwrap > li > ul {
+    width: 80.75%;
+    padding: 15px 0 15px 42px;
+    box-sizing: border-box;
+}
+
+.listwrap > li > ul > li {
+    display: inline-block;
+    width: 22%;
+    line-height: 3;
+}
+
+.listwrap > li > ul > li > a {
+    color: #000;
+}
 /* footer */
 footer {
     width: 100%;
@@ -300,6 +430,28 @@ address li span {
     width: 140px;
     display: flex;
     justify-content: space-between;
+}
+
+#for_totop {
+    position: fixed;
+    display: block;
+    width: 9.6025vw;
+    height: 9.6025vw;
+    max-width: 60px;
+    max-height: 60px;
+    right: 23px;
+    bottom: 21px;
+    font-size: 0;
+    background: url(../img/icon/totop.png) no-repeat center/100% 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 0.25s linear, visibility 0.25s linear;
+}
+
+#for_totop.on {
+    opacity: 1;
+    visibility: visible;
 }
 
 /******* start max-width 1599px ********/

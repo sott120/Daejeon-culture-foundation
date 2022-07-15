@@ -9,6 +9,7 @@
 // }
 // cultuerAni();
 
+// 헤더 fixed 기능
 const cultuerImg = document.querySelectorAll('.cultuer_ani');
 function scrollPlay() {
     for (i = 0; i < cultuerImg.length; i++) {
@@ -33,3 +34,25 @@ function scrollfix() {
 }
 window.addEventListener('load', scrollfix);
 window.addEventListener('scroll', scrollfix);
+
+//top버튼
+//top버튼 클릭실행
+window.addEventListener('scroll', scrollE);
+window.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+//top버튼 보이기
+let cont = document.querySelector('#for_totop');
+function scrollE() {
+    if (window.scrollY >= 100) {
+        cont.classList.add('on');
+        //2초 뒤에 사라짐
+        setTimeout(function () {
+            cont.classList.remove('on');
+        }, 2000);
+    } else {
+        cont.classList.remove('on');
+    }
+}
