@@ -1,226 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>대전문화재단</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/common.css" />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <div id="headerWrap" class="header_wrap">
-            <header>
-                <ul class="link_nav">
-                    <li><a href="">이달의 문화</a></li>
-                    <li><a href="">생활문화포털</a></li>
-                    <li><a href="">대전예술 씨앗(후원하기)</a></li>
-                    <li><a href="">문화예술활동공간</a></li>
-                </ul>
-                <h1 class="logo">
-                    <a href="">
-                        <img src="img/logo.png" alt="" />
-                    </a>
-                </h1>
-                <ul class="util_nav">
-                    <li class="mo_none">
-                        <a class="font_p" href="">A+</a>
-                        <a class="font_n" href="">A</a>
-                        <a class="font_m" href="">A-</a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대전문화재단</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="headerWrap" class="header_wrap">
+        <header>
+            <ul class="link_nav">
+                <li><a href="">이달의 문화</a></li>
+                <li><a href="">생활문화포털</a></li>
+                <li><a href="">대전예술 씨앗(후원하기)</a></li>
+                <li><a href="">문화예술활동공간</a></li>
+            </ul>
+            <h1 class="logo">
+                <a href="">
+                    <img src="img/logo.png" alt="" />
+                </a>
+            </h1>
+            <ul class="util_nav">
+                <li class="mo_none">
+                    <a class="font_p" href="">A+</a>
+                    <a class="font_n" href="">A</a>
+                    <a class="font_m" href="">A-</a>
+                </li>
+                <li class="user"><a href="">로그인</a></li>
+                <li class="search mo_none"><a href=""></a></li>
+            </ul>
+        </header>
+        <nav id="mainNav">
+            <h1 class="logo_white">
+                <a href="">
+                    <img src="img/logo2.png" alt="" />
+                </a>
+            </h1>
+            <ul class="w1200 mo_none">
+                <li><a href="sub/sub.html">문화예술공간</a></li>
+                <li><a href="">사업안내</a></li>
+                <li><a href="">자료실</a></li>
+                <li><a href="">알림</a></li>
+                <li><a href="">정보공개</a></li>
+                <li><a href="">재단소개</a></li>
+            </ul>
+            <div class="m_search pc_none">
+                <input type="text" />
+                <a href=""></a>
+            </div>
+            <div class="btn_nav">
+                <a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </nav>
+        <nav class="full_menu">
+            <div class="full_menu_inner">
+                <div class="close">
+                    <a>전체메뉴 닫기</a>
+                </div>
+                <ul class="listwrap">
+                    <li>
+                        <p class="full_li" href="sub/sub.html">문화예술공간</p>
+                        <ul class="depth">
+                            <li><a href="sub/sub.html">대전무형문화재전수회관</a></li>
+                            <li><a href="">대전전통나래관</a></li>
+                            <li><a href="">대전웃다리농악 전수교육관</a></li>
+                            <li><a href="">대전문학관</a></li>
+                            <li><a href="">대전테미예술창작센터</a></li>
+                            <li><a href="">대전예술가의 집</a></li>
+                        </ul>
                     </li>
-                    <li class="user"><a href="">로그인</a></li>
-                    <li class="search mo_none"><a href=""></a></li>
-                </ul>
-            </header>
-            <nav id="mainNav">
-                <h1 class="logo_white">
-                    <a href="">
-                        <img src="img/logo2.png" alt="" />
-                    </a>
-                </h1>
-                <ul class="w1200 mo_none">
-                    <li><a href="">문화예술공간</a></li>
-                    <li><a href="">사업안내</a></li>
-                    <li><a href="">자료실</a></li>
-                    <li><a href="">알림</a></li>
-                    <li><a href="">정보공개</a></li>
-                    <li><a href="">재단소개</a></li>
-                </ul>
-                <div class="m_search pc_none">
-                    <input type="text" />
-                    <a href=""></a>
-                </div>
-                <div class="btn_nav">
-                    <a>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-            </nav>
-            <nav class="full_menu">
-                <div class="full_menu_inner">
-                    <div class="close">
-                        <a>전체메뉴 닫기</a>
-                    </div>
-                    <ul class="listwrap">
-                        <li>
-                            <p class="full_li" href="#">문화예술공간</p>
-                            <ul class="depth">
-                                <li><a href="">대전무형문화재전수회관</a></li>
-                                <li><a href="">대전전통나래관</a></li>
-                                <li><a href="">대전웃다리농악 전수교육관</a></li>
-                                <li><a href="">대전문학관</a></li>
-                                <li><a href="">대전테미예술창작센터</a></li>
-                                <li><a href="">대전예술가의 집</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="full_li" href="#">사업안내</p>
-                            <ul class="depth">
-                                <li><a href="">문화예술지원</a></li>
-                                <li><a href="">생활문화지원</a></li>
-                                <li><a href="">정책연구·경영</a></li>
-                                <li><a href="">예술경영복지지원</a></li>
-                                <li><a href="">예술교육지원센터</a></li>
-                                <li><a href="">문화예술활동공간</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="full_li" href="#">자료실</p>
-                            <ul class="depth">
-                                <li><a href="">발간자료</a></li>
-                                <li><a href="">서식자료</a></li>
-                                <li><a href="">정책자료</a></li>
-                                <li><a href="">교육자료</a></li>
-                                <li><a href="">일반자료</a></li>
-                                <li><a href="">갤러리</a></li>
-                                <li><a href="">뉴스레터</a></li>
-                                <li><a href="">웹진</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="full_li" href="#">알림</p>
-                            <ul class="depth">
-                                <li><a href="">공지사항</a></li>
-                                <li><a href="">사업공모·결과</a></li>
-                                <li><a href="">입찰공고</a></li>
-                                <li><a href="">채용공고</a></li>
-                                <li><a href="">언론보도</a></li>
-                                <li><a href="">타기관소식</a></li>
-                                <li><a href="">경청과 소통</a></li>
-                                <li><a href="">실시간SNS</a></li>
-                                <li><a href="">문화예술정보</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="full_li" href="#">정보공개</p>
-                            <ul class="depth">
-                                <li><a href="">윤리경영</a></li>
-                                <li><a href="">경영공시</a></li>
-                                <li><a href="">정관/규정</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="full_li" href="#">재단소개</p>
-                            <ul class="depth">
-                                <li><a href="">인사말</a></li>
-                                <li><a href="">경영방향</a></li>
-                                <li><a href="">연혁</a></li>
-                                <li><a href="">로고(CI)</a></li>
-                                <li><a href="">조직 및 연락처</a></li>
-                                <li><a href="">문화기부</a></li>
-                                <li><a href="">유관/협약기관</a></li>
-                                <li><a href="">오시는길</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <main>
-            <section class="board">
-                <article class="w1200">
-                    <ul class="tab_third">
-                        <li class="active_line"><a href="">주요소식</a></li>
-                        <li><a href="">사업공모/결과</a></li>
-                        <li><a href="">공지사항/입찰/채용</a></li>
-                    </ul>
-                    <div class="bnr_list_wrap">
-                        <ul class="bnr_list">
-                            <li>
-                                <a href="">
-                                    <img src="img/banner/ban_first.png" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="img/banner/ban_2.jpg" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="img/banner/ban_3.jpg" alt="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="img/banner/ban_4.jpg" alt="" />
-                                </a>
-                            </li>
+                    <li>
+                        <p class="full_li" href="#">사업안내</p>
+                        <ul class="depth">
+                            <li><a href="">문화예술지원</a></li>
+                            <li><a href="">생활문화지원</a></li>
+                            <li><a href="">정책연구·경영</a></li>
+                            <li><a href="">예술경영복지지원</a></li>
+                            <li><a href="">예술교육지원센터</a></li>
+                            <li><a href="">문화예술활동공간</a></li>
                         </ul>
-                        <ul class="bnr_dot">
-                            <li class="active_dot"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    </li>
+                    <li>
+                        <p class="full_li" href="#">자료실</p>
+                        <ul class="depth">
+                            <li><a href="">발간자료</a></li>
+                            <li><a href="">서식자료</a></li>
+                            <li><a href="">정책자료</a></li>
+                            <li><a href="">교육자료</a></li>
+                            <li><a href="">일반자료</a></li>
+                            <li><a href="">갤러리</a></li>
+                            <li><a href="">뉴스레터</a></li>
+                            <li><a href="">웹진</a></li>
                         </ul>
-                    </div>
-                </article>
-            </section>
-            <section class="program">
-                <article class="w1200">
-                    <div class="sec1">
-                        <div class="sec_title">
-                            <h2>문화예술정보</h2>
-                            <p>
-                                문화와 예술로 삶의 질을 높이는
-                                <span> 대전문화재단의 추천행사들을 만나보세요 </span>
-                            </p>
-                        </div>
-                        <div class="btn_info">
-                            <a href=""> 대전예술가의 집 문화예술정보 </a>
+                    </li>
+                    <li>
+                        <p class="full_li" href="#">알림</p>
+                        <ul class="depth">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">사업공모·결과</a></li>
+                            <li><a href="">입찰공고</a></li>
+                            <li><a href="">채용공고</a></li>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">타기관소식</a></li>
+                            <li><a href="">경청과 소통</a></li>
+                            <li><a href="">실시간SNS</a></li>
+                            <li><a href="">문화예술정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="full_li" href="#">정보공개</p>
+                        <ul class="depth">
+                            <li><a href="">윤리경영</a></li>
+                            <li><a href="">경영공시</a></li>
+                            <li><a href="">정관/규정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="full_li" href="#">재단소개</p>
+                        <ul class="depth">
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">경영방향</a></li>
+                            <li><a href="">연혁</a></li>
+                            <li><a href="">로고(CI)</a></li>
+                            <li><a href="">조직 및 연락처</a></li>
+                            <li><a href="">문화기부</a></li>
+                            <li><a href="">유관/협약기관</a></li>
+                            <li><a href="">오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="board">
+            <article class="w1200">
+                <ul class="tab_third">
+                    <li class="tab_links active" onclick="openTab(event, 'banner')">주요소식</li>
+                    <li class="tab_links" onclick="openTab(event, 'business')">사업공모/결과</li>
+                    <li class="tab_links" onclick="openTab(event, 'notice')">공지사항/입찰/채용</li>
+                </ul>
+                <div id="banner" class="bnr_wrap tab_content active">
+                    <div class="bnr_list">
+                        <div class="bnr_fixed"><a href="">
+                                <img src="img/dcaf/ban1.png" alt="">
+                            </a></div>
+                        <div class="mySwiper1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban5.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban6.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban7.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban8.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban9.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban10.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban11.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban12.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban13.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban14.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban15.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban16.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban17.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban18.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban19.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban20.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban21.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dcaf/ban22.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <ul class="sb_tab">
-                        <li class="active_sb"><a href="">전체</a></li>
-                        <li><a href="">공연</a></li>
-                        <li><a href="">전시</a></li>
-                        <li><a href="">행사</a></li>
-                        <li><a href="">교육</a></li>
-                        <li><a href="">기타</a></li>
+                </div>
+                <div id="business" class="bnr_business tab_content">
+                    <div class="mySwiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 토닥토닥 문화예술학교 운영단체 모집 공고</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.14(목) ~ 2022.08.02(화)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type2">
+                                    <span class="cur">공모결과</span>
+                                    <a class="title" href="">
+                                        <span>2022 공연장대관료지원사업 1차 공모 심사결과 발표</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date"></span>
+                                    <a href="" class="more">접수마감</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 지역예술인 재난지원 기초창작활동비 지원(3차) 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.12(화) ~ 2022.08.12(금)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 청년예술인대관료지원사업 2차 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.19(화) ~ 2022.07.21(목)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 토닥토닥 문화예술학교 운영단체 모집 공고</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.14(목) ~ 2022.08.02(화)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type2">
+                                    <span class="cur">공모결과</span>
+                                    <a class="title" href="">
+                                        <span>2022 공연장대관료지원사업 1차 공모 심사결과 발표</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date"></span>
+                                    <a href="" class="more">접수마감</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 지역예술인 재난지원 기초창작활동비 지원(3차) 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.12(화) ~ 2022.08.12(금)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 청년예술인대관료지원사업 2차 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.19(화) ~ 2022.07.21(목)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 토닥토닥 문화예술학교 운영단체 모집 공고</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.14(목) ~ 2022.08.02(화)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type2">
+                                    <span class="cur">공모결과</span>
+                                    <a class="title" href="">
+                                        <span>2022 공연장대관료지원사업 1차 공모 심사결과 발표</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date"></span>
+                                    <a href="" class="more">접수마감</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 지역예술인 재난지원 기초창작활동비 지원(3차) 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.12(화) ~ 2022.08.12(금)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="type1">
+                                    <span class="cur">사업공모</span>
+                                    <a class="title" href="">
+                                        <span>2022 청년예술인대관료지원사업 2차 공모</span>
+                                    </a>
+                                    <span class="deco"></span>
+                                    <span class="date">2022.07.19(화) ~ 2022.07.21(목)</span>
+                                    <a href="" class="more">접수중</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination3"></div>
+                    </div>
+                </div>
+                <div id="notice" class="bnr_notice tab_content">
+                    <ul>
+                        <li class="title">
+                            공지사항
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 대전무형문화재전수회관 월간상설공연 (5회) '전통춤의 향연'</span>
+                            </a>
+                            <span class="date">2022.07.14</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">들썩들썩인대전 7월 16일(토) 공연 안내입니다.</span>
+                            </a>
+                            <span class="date">2022.07.13</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">들썩들썩인대전 7월 9일(토) 공연 안내입니다.</span>
+                            </a>
+                            <span class="date">2022.07.06</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">제24회 대통령상 전국합창경연대회 요강 안내</span>
+                            </a>
+                            <span class="date">2022.06.29</span>
+                        </li>
                     </ul>
-                    <div class="sb_list_wrap">
-                        <ul class="sb_list">
-                            <li>
+                    <ul>
+                        <li class="title">
+                            입찰
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 청년기획자양성프로젝트 운영 용역 수행업체 협상대상자 공고</span>
+                            </a>
+                            <span class="date">2022.07.01</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 대전문화예술교육 통합축제 행사대행 용역입찰 공고</span>
+                            </a>
+                            <span class="date">2022.06.29</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 대전문화예술교육지원사업 현장평가 용역 수행업체 선정을 위한 우선협상대상자 공고</span>
+                            </a>
+                            <span class="date">2022.06.21</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 청년기획자양성프로젝트 운영 용역 입찰 공고</span>
+                            </a>
+                            <span class="date">2022.06.20</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="title">
+                            채용
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 전수교육관 문화예술교육사 채용(2차) 2차 재공고</span>
+                            </a>
+                            <span class="date">2022.07.06</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 (재)대전문화재단 기간제근로자 통합채용(3차) 최종합격자 발표 공고 (공개3)</span>
+                            </a>
+                            <span class="date">2022.06.28</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">(재)대전문화재단 기간제근로자 통합채용(3차) 서류전형 합격자 발표 및 면접 시험 안내</span>
+                            </a>
+                            <span class="date">2022.06.24</span>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="title">2022 전수교육관 문화예술교육사 채용(2차) 재공고</span>
+                            </a>
+                            <span class="date">2022.06.22</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="program">
+            <article class="w1200">
+                <div class="sec1">
+                    <div class="sec_title">
+                        <h2>문화예술정보</h2>
+                        <p>
+                            문화와 예술로 삶의 질을 높이는
+                            <span> 대전문화재단의 추천행사들을 만나보세요 </span>
+                        </p>
+                    </div>
+                    <div class="btn_info">
+                        <a href=""> 대전예술가의 집 문화예술정보 </a>
+                    </div>
+                </div>
+                <ul class="sb_tab">
+                    <li class="sb_tab_li active_sb"><a href="#none">전체</a></li>
+                    <li class="sb_tab_li" data-code="A30-A"><a href="#none">공연</a></li>
+                    <li class="sb_tab_li" data-code="A30-B"><a href="#none">전시</a></li>
+                    <li class="sb_tab_li" data-code="A30-C"><a href="#none">행사</a></li>
+                    <li class="sb_tab_li" data-code="A30-D"><a href="#none">교육</a></li>
+                    <li class="sb_tab_li" data-code="A30-Z"><a href="#none">기타</a></li>
+                </ul>
+                <article class="mySwiper2">
+                    <div class="sb_list_wrap swiper-wrapper">
+                        <ul class="sb_list swiper-slide">
+                            <li class="sb_li type1">
                                 <a href="">
                                     <span class="cate type1">공연</span>
-                                    <h3 class="sb_title">2022 대전꿈의오케스트라 <꿈오 프로젝트 하나되어></h3>
+                                    <h3 class="sb_title">2022 대전꿈의오케스트라 <꿈오 프로젝트 하나되어>
+                                    </h3>
                                     <span class="sb_date">2022.4.19</span>
                                     <div class="sb_thum">
                                         <img src="img/20220408102920866.png" alt="" />
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type1">
                                 <a href="">
                                     <span class="cate type1">공연</span>
                                     <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
@@ -230,17 +504,18 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type3">
                                 <a href="">
                                     <span class="cate type2">행사</span>
-                                    <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍<꿈오 프로젝트 하나되어></h3>
+                                    <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍<꿈오 프로젝트 하나되어>
+                                    </h3>
                                     <span class="sb_date">2022.4.22</span>
                                     <div class="sb_thum">
                                         <img src="img/20220408102920866.png" alt="" />
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type1">
                                 <a href="">
                                     <span class="cate type1">공연</span>
                                     <h3 class="sb_title">에라토 정기연주회</h3>
@@ -250,7 +525,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type2">
                                 <a href="">
                                     <span class="cate type3">전시</span>
                                     <h3 class="sb_title">매화</h3>
@@ -260,7 +535,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type1">
                                 <a href="">
                                     <span class="cate type1">공연</span>
                                     <h3 class="sb_title">四季...춤으로 담다</h3>
@@ -270,7 +545,7 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type1">
                                 <a href="">
                                     <span class="cate type1">공연</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
@@ -280,7 +555,175 @@
                                     </div>
                                 </a>
                             </li>
-                            <li>
+                            <li class="sb_li type4">
+                                <a href="">
+                                    <span class="cate type4">교육</span>
+                                    <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
+                                    <span class="sb_btn sb_orange">접수중</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220414171143991.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sb_list swiper-slide mo_none">
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">2022 대전꿈의오케스트라 <꿈오 프로젝트 하나되어>
+                                    </h3>
+                                    <span class="sb_date">2022.4.19</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408102920866.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
+                                    <span class="sb_date">2022.4.21</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220407124123577.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type3">
+                                <a href="">
+                                    <span class="cate type2">행사</span>
+                                    <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍<꿈오 프로젝트 하나되어>
+                                    </h3>
+                                    <span class="sb_date">2022.4.22</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408102920866.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">에라토 정기연주회</h3>
+                                    <span class="sb_date">2022.4.24</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220413125709568.jpeg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type2">
+                                <a href="">
+                                    <span class="cate type3">전시</span>
+                                    <h3 class="sb_title">매화</h3>
+                                    <span class="sb_date">2022.4.19 ~ 4.24</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408100202935.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">四季...춤으로 담다</h3>
+                                    <span class="sb_date">2022.4.27</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220417102408463.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
+                                    <span class="sb_btn sb_gray">접수예정</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220413103232635.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type4">
+                                <a href="">
+                                    <span class="cate type4">교육</span>
+                                    <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
+                                    <span class="sb_btn sb_orange">접수중</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220414171143991.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sb_list swiper-slide mo_none">
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">2022 대전꿈의오케스트라 <꿈오 프로젝트 하나되어>
+                                    </h3>
+                                    <span class="sb_date">2022.4.19</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408102920866.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">청춘예찬 부제: 젊음을 기뻐하고 존경한다</h3>
+                                    <span class="sb_date">2022.4.21</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220407124123577.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type3">
+                                <a href="">
+                                    <span class="cate type2">행사</span>
+                                    <h3 class="sb_title">2022 대전 시민랩 공모사업 디자인 컨설팅 워크숍<꿈오 프로젝트 하나되어>
+                                    </h3>
+                                    <span class="sb_date">2022.4.22</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408102920866.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">에라토 정기연주회</h3>
+                                    <span class="sb_date">2022.4.24</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220413125709568.jpeg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type2">
+                                <a href="">
+                                    <span class="cate type3">전시</span>
+                                    <h3 class="sb_title">매화</h3>
+                                    <span class="sb_date">2022.4.19 ~ 4.24</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220408100202935.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">四季...춤으로 담다</h3>
+                                    <span class="sb_date">2022.4.27</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220417102408463.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type1">
+                                <a href="">
+                                    <span class="cate type1">공연</span>
+                                    <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
+                                    <span class="sb_btn sb_gray">접수예정</span>
+                                    <div class="sb_thum">
+                                        <img src="img/20220413103232635.jpg" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sb_li type4">
                                 <a href="">
                                     <span class="cate type4">교육</span>
                                     <h3 class="sb_title">2022 대전무형문화재전수회관 월간상설공연 2회 전통춤의 풍경</h3>
@@ -292,140 +735,146 @@
                             </li>
                         </ul>
                     </div>
+                    
                 </article>
-            </section>
-            <section class="culture_wrap">
-                <article class="w1200">
-                    <div class="sec_title">
-                        <h2>문화예술공간</h2>
-                        <p>
-                            문화의 여유와 예술의 품격을 즐길 수 있도록
-                            <span>문화공간을 찾아주세요</span>
-                        </p>
-                    </div>
-                    <div>
-                        <ul class="culture">
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist1.png" alt="" />
-                                    <p>대전무형문화재 <span>전수회관</span></p>
-                                </a>
-                            </li>
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist3.png" alt="" />
-                                    <p>대전전통나래관 <span>&nbsp;</span></p>
-                                </a>
-                            </li>
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist2.png" alt="" />
-                                    <p>대전웃다리농악 <span>전수회관</span></p>
-                                </a>
-                            </li>
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist4.png" alt="" />
-                                    <p>대전문학관 <span>&nbsp;</span></p>
-                                </a>
-                            </li>
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist5.png" alt="" />
-                                    <p>대전테미 <span>예술창작센터</span></p>
-                                </a>
-                            </li>
-                            <li class="cultuer_ani">
-                                <a href="">
-                                    <img src="img/bg_culist6.png" alt="" />
-                                    <p>대전예술가의 집 <span>&nbsp;</span></p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
-            <section class="link_wrap mo_none">
-                <div class="link_top">
-                    <div>대전시 문화기관</div>
-                    <ul class="">
-                        <li>
-                            <a href=""><img src="img/ban_out1_1.png" alt="" /></a>
+                <img class="next_arrow" src="img/icon/icn_con_right.png"></img>
+                    <img class="prev_arrow" src="img/icon/icn_con_left.png"></img>
+            </article>
+        </section>
+        <section class="culture_wrap">
+            <article class="w1200">
+                <div class="sec_title">
+                    <h2>문화예술공간</h2>
+                    <p>
+                        문화의 여유와 예술의 품격을 즐길 수 있도록
+                        <span>문화공간을 찾아주세요</span>
+                    </p>
+                </div>
+                <div>
+                    <ul class="culture">
+                        <li class="cultuer_ani">
+                            <a href="sub/sub.html">
+                                <img src="img/bg_culist1.png" alt="" />
+                                <p>대전무형문화재 <span>전수회관</span></p>
+                            </a>
                         </li>
-                        <li>
-                            <a href=""><img src="img/ban_out1_2.png" alt="" /></a>
+                        <li class="cultuer_ani">
+                            <a href="">
+                                <img src="img/bg_culist3.png" alt="" />
+                                <p>대전전통나래관 <span>&nbsp;</span></p>
+                            </a>
                         </li>
-                        <li>
-                            <a href=""><img src="img/ban_out1_3.png" alt="" /></a>
+                        <li class="cultuer_ani">
+                            <a href="">
+                                <img src="img/bg_culist2.png" alt="" />
+                                <p>대전웃다리농악 <span>전수회관</span></p>
+                            </a>
                         </li>
-                        <li>
-                            <a href=""><img src="img/ban_out1_6.png" alt="" /></a>
+                        <li class="cultuer_ani">
+                            <a href="">
+                                <img src="img/bg_culist4.png" alt="" />
+                                <p>대전문학관 <span>&nbsp;</span></p>
+                            </a>
                         </li>
-                        <li>
-                            <a href=""><img src="img/ban_out1_7.png" alt="" /></a>
+                        <li class="cultuer_ani">
+                            <a href="">
+                                <img src="img/bg_culist5.png" alt="" />
+                                <p>대전테미 <span>예술창작센터</span></p>
+                            </a>
                         </li>
-                        <li>
-                            <a href=""><img src="img/icon/cir_next.png" alt="" /></a>
+                        <li class="cultuer_ani">
+                            <a href="">
+                                <img src="img/bg_culist6.png" alt="" />
+                                <p>대전예술가의 집 <span>&nbsp;</span></p>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="link_top">
-                    <div>전국 문화기관</div>
-                    <ul class="">
-                        <li>
-                            <a href=""><img src="img/ban_out2_1.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="img/ban_out2_2.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="img/ban_out2_3.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="img/ban_out2_6.png" alt="" /></a>
-                        </li>
-
-                        <li>
-                            <a href=""><img src="img/icon/cir_next.png" alt="" /></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="f_top">
-                <ul class="w1200">
-                    <li><a href=""> 고객만족경영 </a></li>
-                    <li><a href=""> 개인정보처리방침 </a></li>
-                    <li><a href=""> 이메일주소무단수집거부 </a></li>
-                    <li><a href=""> 찾아오시는길 </a></li>
-                    <li><a href=""> 직원찾기 </a></li>
-                    <li><a class="btn_b" href=""> 협약기관 </a></li>
+            </article>
+        </section>
+        <section class="link_wrap mo_none">
+            <div class="link_top">
+                <div>대전시 문화기관</div>
+                <ul class="">
+                    <li>
+                        <a href=""><img src="img/ban_out1_1.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out1_2.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out1_3.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out1_6.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out1_7.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/icon/cir_next.png" alt="" /></a>
+                    </li>
                 </ul>
             </div>
-            <div class="f_bot">
-                <div class="w1200">
-                    <h1><img src="img/logo3.png" alt="" /></h1>
-                    <address>
-                        <ul>
-                            <li>
-                                <span>대표전화 (042) 480-1000,</span>
-                                <span>대표팩스 (042) 480-1099</span>
-                            </li>
-                            <li>(34944) 대전광역시 중구 중앙로 32 (문화동 1-27)</li>
-                            <li>E-Mail : dcaf@dcaf.or.kr</li>
-                            <li>Copyright 2018 DAEJEON CULTURE AND ARTS FOUNDATION. ALL RIGHTS RESERVED.</li>
-                        </ul>
-                    </address>
-                    <div class="f_mark">
-                        <div><img src="img/ft_mark1.png" alt="" /></div>
-                        <div><img src="img/ft_mark2.png" alt="" /></div>
-                    </div>
+            <div class="link_top">
+                <div>전국 문화기관</div>
+                <ul class="">
+                    <li>
+                        <a href=""><img src="img/ban_out2_1.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out2_2.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out2_3.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ban_out2_6.png" alt="" /></a>
+                    </li>
+
+                    <li>
+                        <a href=""><img src="img/icon/cir_next.png" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="f_top">
+            <ul class="w1200">
+                <li><a href=""> 고객만족경영 </a></li>
+                <li><a href=""> 개인정보처리방침 </a></li>
+                <li><a href=""> 이메일주소무단수집거부 </a></li>
+                <li><a href=""> 찾아오시는길 </a></li>
+                <li><a href=""> 직원찾기 </a></li>
+                <li><a class="btn_b" href=""> 협약기관 </a></li>
+            </ul>
+        </div>
+        <div class="f_bot">
+            <div class="w1200">
+                <h1><img src="img/logo3.png" alt="" /></h1>
+                <address>
+                    <ul>
+                        <li>
+                            <span>대표전화 (042) 480-1000,</span>
+                            <span>대표팩스 (042) 480-1099</span>
+                        </li>
+                        <li>(34944) 대전광역시 중구 중앙로 32 (문화동 1-27)</li>
+                        <li>E-Mail : dcaf@dcaf.or.kr</li>
+                        <li>Copyright 2018 DAEJEON CULTURE AND ARTS FOUNDATION. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </address>
+                <div class="f_mark">
+                    <div><img src="img/ft_mark1.png" alt="" /></div>
+                    <div><img src="img/ft_mark2.png" alt="" /></div>
                 </div>
             </div>
-            <a href="#" id="for_totop" class="">페이지 최상단으로 스크롤</a>
-        </footer>
-        <script src="js/connon.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+        </div>
+        <a href="#" id="for_totop" class="">페이지 최상단으로 스크롤</a>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/connon.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
