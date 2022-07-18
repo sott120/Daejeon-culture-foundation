@@ -5,7 +5,9 @@ body {
     /* 높이값이없어서 그냥 overflow: hidden 불가능 */
 }
 
-.scrollLock { overflow: hidden; }
+.scrollLock {
+    overflow: hidden;
+}
 
 .w1200 {
     width: 1200px;
@@ -249,7 +251,7 @@ nav.fix .btn_nav span {
     background-color: #fff;
 }
 
-.on{
+.on {
     display: block;
 }
 
@@ -371,22 +373,22 @@ nav.fix .btn_nav span {
     line-height: 3;
 }
 
-.listwrap > li > ul.depth >li:nth-child(2),
-.listwrap > li > ul.depth >li:nth-child(6){
+.listwrap > li > ul.depth > li:nth-child(2),
+.listwrap > li > ul.depth > li:nth-child(6) {
     width: 19%;
 }
 
-.listwrap > li > ul.depth >li:nth-child(3),
-.listwrap > li > ul.depth >li:nth-child(7){
+.listwrap > li > ul.depth > li:nth-child(3),
+.listwrap > li > ul.depth > li:nth-child(7) {
     width: 25%;
 }
 
-.listwrap > li > ul.depth >li:nth-child(4),
-.listwrap > li > ul.depth >li:nth-child(8){
+.listwrap > li > ul.depth > li:nth-child(4),
+.listwrap > li > ul.depth > li:nth-child(8) {
     width: 17%;
 }
 
-.listwrap > li > ul.depth >li:nth-child(9){
+.listwrap > li > ul.depth > li:nth-child(9) {
     width: 12%;
 }
 
@@ -623,7 +625,7 @@ address li span {
         background-position: center center;
     }
 
-    .listwrap{
+    .listwrap {
         height: 100vh;
     }
 
@@ -635,22 +637,20 @@ address li span {
         padding-top: 60px;
     }
 
-    .listwrap > li p{
+    .listwrap > li p {
         font-size: 18px;
         display: block;
         width: 100%;
         cursor: pointer;
         background-size: 23px;
     }
-    
+
     .listwrap > li:nth-child(3) > p,
-    .listwrap > li:nth-child(6) > p
-    {
+    .listwrap > li:nth-child(6) > p {
         background-size: 17px;
     }
 
-    .listwrap > li:nth-child(5) > p
-    {
+    .listwrap > li:nth-child(5) > p {
         background-size: 20px;
     }
 
@@ -660,10 +660,10 @@ address li span {
     }
 
     .listwrap > li > ul > li {
-    width: 49% !important;
-    word-break: keep-all;
-    line-height: 2;
-    font-size: 14px;
+        width: 49% !important;
+        word-break: keep-all;
+        line-height: 2;
+        font-size: 14px;
     }
 
     /* footer */

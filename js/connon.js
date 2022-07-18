@@ -45,7 +45,7 @@ cont.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
     });
 });
 
@@ -70,7 +70,6 @@ function scrollHide() {
     }, 2000);
 }
 
-
 // 햄버거 클릭 시 네비게이션 토글
 const btnNav = document.querySelector('.btn_nav');
 const btnClose = document.querySelector('.close');
@@ -80,12 +79,12 @@ const body = document.getElementsByTagName('body')[0];
 btnNav.addEventListener('click', function () {
     body.classList.toggle('scrollLock');
     fullMenu.classList.toggle('on');
-})
+});
 // X 클릭 시 네비게이션 닫기
 btnClose.addEventListener('click', function () {
     body.classList.remove('scrollLock');
     fullMenu.classList.remove('on');
-})
+});
 
 // const fullLi = document.querySelectorAll('.btn_nav');
 // const depth = document.querySelectorAll('.depth');
@@ -93,5 +92,5 @@ btnClose.addEventListener('click', function () {
 //     li.addEventListener('click',(index) => {
 //         console.log(depth[0])
 //         depth[index].classList.toggle('on');
-//     })    
+//     })
 // });

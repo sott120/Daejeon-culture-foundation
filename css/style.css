@@ -1,4 +1,4 @@
-/* (변경점) 스와이퍼1 적용 */
+/* swiper1 */
 .mySwiper1 {
     max-width: 893.3333px !important;
     padding-top: 50px;
@@ -43,7 +43,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
-
 }
 
 .mySwiper1 .swiper-slide:hover img {
@@ -98,9 +97,7 @@
     background-color: #7d7d7d !important;
 }
 
-/* (변경점) 스와이퍼1 적용 끝 */
-
-/* (변경점) 스와이퍼3(사업공모결과) */
+/* swiper3 */
 .mySwiper3 {
     overflow: hidden;
 }
@@ -124,7 +121,7 @@
     padding: 29px 20px 0;
     position: relative;
     box-sizing: border-box;
-    transition: background .35s linear, transform .35s linear, opacity .35s linear;
+    transition: background 0.35s linear, transform 0.35s linear, opacity 0.35s linear;
 }
 
 .mySwiper3 .swiper-slide .type1:hover {
@@ -147,7 +144,7 @@
     font-weight: 400;
     text-align: center;
     background-color: #fff;
-    transition: border .35s linear;
+    transition: border 0.35s linear;
 }
 
 .mySwiper3 .swiper-slide .type1 .cur {
@@ -227,9 +224,7 @@
     color: #cb9513;
 }
 
-/* (변경점) 스와이퍼3(사업공모결과) 끝 */
-
-/* (변경점) 공지사항/입찰/채용 */
+/* 공지사항/입찰/채용 */
 .bnr_notice {
     margin-top: 77px;
 }
@@ -242,7 +237,7 @@
     padding: 30px;
     border: 1px solid #fff;
     box-sizing: border-box;
-    transition: background .2s linear, box-shadow .2s linear;
+    transition: background 0.2s linear, box-shadow 0.2s linear;
 }
 
 .bnr_notice ul:not(:last-of-type) {
@@ -266,7 +261,7 @@
 .bnr_notice li.title::before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     width: 48px;
     height: 2px;
     bottom: -11px;
@@ -309,7 +304,7 @@
     text-align: left;
 }
 
-.bnr_notice li a+.date {
+.bnr_notice li a + .date {
     display: block;
     line-height: 1;
     padding-right: 6px;
@@ -317,21 +312,7 @@
     color: #808080;
 }
 
-/* (변경점) 공지사항/입찰/채용 끝 */
-
-/* main start */
-
-
-/* (변경점) 탭메뉴 active */
-.tab_third li.active {
-    border-bottom: 4px solid #ff9f00;
-    color: #000;
-    font-size: 25px;
-}
-
-/* (변경점) 탭메뉴 active 끝 */
-
-/*-----------first section start-----------*/
+/* main */
 main {
     overflow: hidden;
 }
@@ -346,8 +327,7 @@ main {
     display: flex;
 }
 
-/* (변경점) 탭메뉴 a태그 제거 */
-.tab_third>li {
+.tab_third > li {
     width: 33.3333%;
     padding: 11px 0;
     text-align: center;
@@ -359,9 +339,12 @@ main {
     line-height: 29px;
 }
 
-/* (변경점) 탭메뉴 a태그 제거 끝 */
+.tab_third li.active {
+    border-bottom: 4px solid #ff9f00;
+    color: #000;
+    font-size: 25px;
+}
 
-/* (변경점) 탭메뉴 추가 설정 */
 .tab_content {
     position: relative;
     display: none;
@@ -371,9 +354,6 @@ main {
     display: block;
 }
 
-/* (변경점) 탭메뉴 추가 설정 끝 */
-
-/* (변경점) 고정 배너 적용 */
 .bnr_list {
     display: flex;
     justify-content: flex-start;
@@ -393,8 +373,6 @@ main {
     z-index: 1;
     width: 280px;
 }
-
-/* (변경점) 고정 배너 적용 끝 */
 
 /* 두번째 섹션 시작 */
 
@@ -432,19 +410,19 @@ main {
     align-items: flex-end;
 }
 
-.sec_title>h2 {
+.sec_title > h2 {
     font-size: 50px;
     color: #000;
     padding-top: 112px;
 }
 
-.sec_title>p {
+.sec_title > p {
     font-size: 20px;
     color: #3a4e5e;
     margin-top: 5px;
 }
 
-.btn_info>a {
+.btn_info > a {
     display: block;
     font-size: 20px;
     padding: 10px 48px;
@@ -525,14 +503,14 @@ main {
     position: absolute;
     top: 72%;
     right: 100px;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .prev_arrow {
     position: absolute;
     top: 72%;
     left: 100px;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
     opacity: 0;
 }
 
@@ -553,17 +531,16 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% + 20px);
-
 }
 
-.sb_list>li {
+.sb_list > li {
     margin: 10px;
     width: calc(25% - 20px);
     height: 200px;
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
     background-color: #fff;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .sb_list a {
@@ -717,43 +694,43 @@ span.type4 {
     justify-content: space-between;
 }
 
-.culture>li {
+.culture > li {
     width: 200px;
     border-right: 1px solid #fff;
     transform: perspective(2000px) rotateY(90deg);
     transition: rotate 0.2s linear, transform 0.4s linear;
 }
 
-.culture>li:nth-child(1) {
+.culture > li:nth-child(1) {
     transition-delay: 0s;
 }
 
-.culture>li:nth-child(2) {
+.culture > li:nth-child(2) {
     transition-delay: 0.2s;
 }
 
-.culture>li:nth-child(3) {
+.culture > li:nth-child(3) {
     transition-delay: 0.4s;
 }
 
-.culture>li:nth-child(4) {
+.culture > li:nth-child(4) {
     transition-delay: 0.6s;
 }
 
-.culture>li:nth-child(5) {
+.culture > li:nth-child(5) {
     transition-delay: 0.8s;
 }
 
-.culture>li:nth-child(6) {
+.culture > li:nth-child(6) {
     transition-delay: 1s;
 }
 
-.culture>li.ani {
+.culture > li.ani {
     transform: perspective(2000px) rotateY(0deg);
     /* animation: rotate 0.6s linear; */
 }
 
-.culture>li:hover a::before {
+.culture > li:hover a::before {
     background-color: #255e8f;
 }
 
@@ -825,14 +802,14 @@ span.type4 {
     /* 같이 포지션이 있으면 앞으로 나옴 왜지..? */
 }
 
-.link_top>div {
+.link_top > div {
     width: 200px;
     line-height: 60px;
     background-color: #7a7a7a;
     text-align: center;
 }
 
-.link_top>ul {
+.link_top > ul {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -841,24 +818,20 @@ span.type4 {
     width: 1000px;
 }
 
-.link_top>ul>li {
+.link_top > ul > li {
     margin-right: 65px;
 }
 
 @media only screen and (max-width: 1510px) {
-
     .next_arrow,
     .prev_arrow {
         display: none;
     }
-
 }
-
 
 /******* start max-width 1200px ********/
 
 @media only screen and (max-width: 1199px) {
-
     /* (변경점) 스와이퍼1 반응형 */
     .mySwiper1 {
         overflow: visible;
@@ -972,7 +945,6 @@ span.type4 {
         font-size: 12px;
     }
 
-
     .mySwiper3 .swiper-slide .more {
         width: 100px;
         height: 24px;
@@ -998,7 +970,7 @@ span.type4 {
         box-shadow: 5px 5px 10px rgb(33 33 33 / 5%);
     }
 
-    .bnr_notice>ul:not(:last-of-type) {
+    .bnr_notice > ul:not(:last-of-type) {
         margin-bottom: 3.75vmin;
     }
 
@@ -1035,7 +1007,7 @@ span.type4 {
         font-size: 13px;
     }
 
-    .bnr_notice li a+.date {
+    .bnr_notice li a + .date {
         padding: 0;
         font-size: 12px;
     }
@@ -1046,12 +1018,8 @@ span.type4 {
 
     /* (변경점) 공지사항/입찰/채용 끝 */
 
-
-
-
-
     /* (변경점) 탭메뉴 a태그 제거 */
-    .tab_third>li {
+    .tab_third > li {
         font-size: 3.125vmin;
         padding: 6px 0;
     }
@@ -1060,12 +1028,11 @@ span.type4 {
         font-size: 3.50625vmin;
     }
 
-    .tab_third>.active_underline {
+    .tab_third > .active_underline {
         font-size: 3.90625vmin;
     }
 
     /* (변경점) 탭메뉴 a태그 제거 끝 */
-
 
     /* (변경점) 고정 배너 반응형 삭제 */
     .bnr_list {
@@ -1097,7 +1064,7 @@ span.type4 {
         display: block;
     }
 
-    .sec_title>h2 {
+    .sec_title > h2 {
         padding-top: 24px;
         font-size: 6.253125vmin;
     }
@@ -1111,7 +1078,7 @@ span.type4 {
         padding: 30px 0;
     }
 
-    .btn_info>a {
+    .btn_info > a {
         font-size: 3.4375vmin;
     }
 
@@ -1236,7 +1203,7 @@ span.type4 {
         margin-top: 20px;
     }
 
-    .culture>li {
+    .culture > li {
         width: calc(50% - 1px);
     }
 
