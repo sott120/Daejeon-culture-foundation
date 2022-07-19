@@ -73,13 +73,14 @@ h1 img {
     position: absolute;
     width: 132px;
     height: 38px;
-    top: 45%;
+    top: 37px;
     left: 2.8125%;
     transform: translateY(-50%);
 }
 
 nav.fix .logo_white {
     display: block;
+    padding-right: 37px;
 }
 
 .logo_white img {
@@ -167,18 +168,1026 @@ nav {
     z-index: 100;
 }
 
+nav .nav_title.on {
+    border: 1px solid #0066b2;
+    color: #0066b2;
+}
+
+nav.fix .nav_title.on {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.nav_title.on + .depth2 {
+    display: block;
+}
+
+.depth2 {
+    position: absolute;
+    display: none;
+    width: /*100%*/ 1200px;
+    height: auto;
+    top: 74px;
+    left: 0;
+    background: #fff;
+    font-size: 0;
+    text-align: center;
+}
+
+.depth2::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    border-bottom: 1px solid #e4e4e6;
+    background: #fff;
+    z-index: -1;
+}
+
+.depth2 > .nav_close {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 29px;
+    top: 24px;
+    right: 0;
+    background: url(../img/icn_cross.png) no-repeat center;
+}
+
+.depth2 > p {
+    line-height: 40px;
+    padding: 89px 0 54px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.depth2 > p > img {
+    width: auto;
+    position: relative;
+    vertical-align: middle;
+    top: -3px;
+    margin: 0 5px;
+}
+
+.depth2 div {
+    font-size: 16px;
+}
+
+/* 컬쳐 */
+.depth2.culture {
+    padding: 0 0 64px;
+}
+
+.depth2.culture > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 16.666666%;
+    padding: 0 2px;
+    margin-top: 129px;
+    box-sizing: border-box;
+}
+
+.depth2.culture > div a {
+    position: relative;
+    display: block;
+}
+
+.depth2.culture > div span {
+    display: block;
+    color: #000;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+
+.depth2.culture > div span.thumb {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    transform: translate(-50%, -98px);
+}
+
+.depth2.culture > div span.thumb::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../img/icn_look.png) rgba(0, 0, 0, 0.3) no-repeat center/auto;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.depth2.culture > div a:hover .thumb::before {
+    opacity: 1;
+}
+
+.depth2.culture > div span.thumb img {
+    display: block;
+    width: 100%;
+}
+
+.depth2.culture > div span.thumb + span {
+    padding-top: 84px;
+}
+
+.depth2.culture > div span.tel {
+    padding: 11px 0 19px;
+    color: #235d13;
+}
+
+.depth2.culture > div span.tel img {
+    width: auto;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.depth2.culture > div span.title {
+    padding: 16px 0;
+    border: 1px solid #ececec;
+    margin-top: 3px;
+    background: transparent;
+    color: #434343;
+    font-size: 14px;
+}
+
+/* 비지니스 */
+.depth2.business > div {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    height: 554px;
+    padding: 0 0 22px;
+    box-sizing: border-box;
+}
+
+.depth2.business > div:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.depth2.business > div:nth-of-type(1) {
+    background-color: #f4af01;
+}
+
+.depth2.business > div:nth-of-type(2) {
+    background-color: #e588ab;
+}
+
+.depth2.business > div:nth-of-type(3) {
+    background-color: #3b9cc8;
+}
+
+.depth2.business > div:nth-of-type(4) {
+    background-color: #87bf95;
+}
+
+.depth2.business > div:nth-of-type(5) {
+    background-color: #b5b6b9;
+    background-image: url(../img/thumb_bu2.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.depth2.business > div .top {
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+.depth2.business > div:nth-of-type(1) .top {
+    background-color: #fcce13;
+}
+.depth2.business > div:nth-of-type(2) .top {
+    background-color: #f2adc5;
+}
+.depth2.business > div:nth-of-type(3) .top {
+    background-color: #76c8e1;
+}
+.depth2.business > div:nth-of-type(4) .top {
+    background-color: #b2dabe;
+}
+.depth2.business > div:nth-of-type(5) .top {
+    background-color: #d3d4d6;
+}
+
+.depth2.business > div > ul {
+    padding: 13px 11px 17px;
+}
+
+.depth2.business > div .thumb {
+    display: block;
+    width: 100%;
+    height: 189px;
+    margin: 0 0 4px;
+    background: url(../img/thumb_bu1.png) no-repeat center/cover;
+}
+
+.depth2.business > div > ul > li {
+    line-height: 1.9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.depth2.business > div > ul > li > a {
+    color: #fff;
+    font-weight: 400;
+}
+
+.depth2.business > div:nth-of-type(5) {
+    background-color: #b5b6b9;
+    background-image: url(../img/thumb_bu2.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.depth2.business > div:nth-of-type(5) p {
+    line-height: 1.6;
+    padding: 33px 23px 0;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+    word-break: keep-all;
+}
+
+.depth2.business > div:nth-of-type(5) p span {
+    display: inline-block;
+    line-height: 1.1;
+    padding: 0 1px;
+    font-weight: inherit;
+    background: #959627;
+}
+
+.depth2.business > div .more {
+    position: absolute;
+    display: block;
+    width: 146px;
+    height: 34px;
+    line-height: 32px;
+    bottom: 22px;
+    left: 50%;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    box-sizing: border-box;
+    transform: translate(-50%, 0);
+}
+/* 래퍼런스 */
+.depth2 div {
+    font-size: 16px;
+}
+
+.depth2.reference {
+    padding-bottom: 60px;
+}
+
+.depth2.reference .box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.depth2.reference .box1 {
+    width: 600px;
+    font-size: 0;
+}
+
+.depth2.reference .box1 > img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(-n + 5) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 108px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.depth2.reference .box1 > div:nth-of-type(-n + 5):not(:first-of-type) {
+    margin-left: 15px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) {
+    font-size: 0;
+    margin-top: 15px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(-n + 5) a {
+    display: block;
+    line-height: 1.25;
+    padding: 53px 3px 12px 57px;
+    border: 1px solid #cfcfcf;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    box-sizing: border-box;
+    transition: border 0.3s linear, color 0.3s linear, background 0.3s linear;
+    background-repeat: no-repeat;
+}
+
+.depth2.reference .box1 > div:nth-of-type(1) a {
+    background-image: url(../img/icn_ref1.png);
+    background-position: 14px 13px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(2) a {
+    background-image: url(../img/icn_ref2.png);
+    background-position: 14px 18px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(3) a {
+    background-image: url(../img/icn_ref3.png);
+    background-position: 13px 18px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(4) a {
+    background-image: url(../img/icn_ref4.png);
+    background-position: 13px 18px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(5) a {
+    background-image: url(../img/icn_ref5.png);
+    background-position: 13px 14px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) {
+    font-size: 0;
+    margin-top: 15px;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) div {
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) div:nth-of-type(1) {
+    width: 354px;
+    margin-right: 15px;
+    background-image: url(../img/bg_nav3_6_1.png);
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) div:nth-of-type(2) {
+    width: 231px;
+    background-image: url(../img/bg_nav3_6_2.png);
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 43px 0 0 17px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) div::before {
+    position: absolute;
+    display: block;
+    content: '\0047\0061\006C\006C\0065\0072\0079';
+    top: 5px;
+    left: 17px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.depth2.reference .box1 > div:nth-of-type(6) div::before {
+    position: absolute;
+    display: block;
+    content: '\0047\0061\006C\006C\0065\0072\0079';
+    top: 5px;
+    left: 17px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.depth2.reference .box1 > div:nth-of-type(-n + 5) a:hover {
+    border: 1px solid #0066b2;
+    color: #0066b2;
+}
+
+.depth2.reference .box1 > div:nth-of-type(1) a:hover {
+    background-image: url(../img/icn_ref1a.png);
+}
+.depth2.reference .box1 > div:nth-of-type(2) a:hover {
+    background-image: url(../img/icn_ref2a.png);
+}
+.depth2.reference .box1 > div:nth-of-type(3) a:hover {
+    background-image: url(../img/icn_ref3a.png);
+}
+.depth2.reference .box1 > div:nth-of-type(4) a:hover {
+    background-image: url(../img/icn_ref4a.png);
+}
+.depth2.reference .box1 > div:nth-of-type(5) a:hover {
+    background-image: url(../img/icn_ref5a.png);
+}
+
+.depth2.reference .box2 {
+    width: 345px;
+    padding: 22px 0 0 78px;
+}
+
+.depth2 div {
+    font-size: 16px;
+}
+
+.depth2.reference .box2 a {
+    position: relative;
+    display: block;
+    text-align: left;
+}
+
+.depth2.reference .box em {
+    font-style: normal;
+}
+
+.depth2.reference .box2 .year {
+    position: absolute;
+    display: inline-block;
+    top: 158px;
+    left: -30px;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+}
+
+.depth2.reference .box2 .year em {
+    display: inline-block;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.depth2.reference .box2 .numb {
+    position: absolute;
+    display: block;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    top: -12px;
+    right: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.depth2.reference .box2 .thumb {
+    display: block;
+    max-height: 357px;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+.depth2.reference .box2 .thumb img {
+    display: block;
+    width: 100%;
+}
+
+.depth2.reference .box2 .name {
+    position: relative;
+    display: inline-block;
+    padding-left: 4px;
+    color: #000;
+}
+
+.depth2.reference .box2 .name::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 53px;
+    height: 8px;
+    right: -51px;
+    bottom: 4px;
+    background: url(../img/deco_arrowright.png);
+}
+
+.depth2.reference .box2 .name em {
+    color: #0a62a6;
+}
+
+.depth2.reference .box3 {
+    width: 255px;
+    padding-left: 23px;
+}
+
+.depth2.reference .box3 > div {
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+
+.depth2.reference .box3 a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 11px 12px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.depth2.reference .box3 > div:not(:last-of-type) {
+    margin-bottom: 23px;
+}
+
+.depth2.reference .box3 a > img {
+    display: block;
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.depth2.reference .box3 a span {
+    position: relative;
+    display: block;
+    padding-left: 2px;
+}
+
+.depth2.reference .box3 a span img {
+    position: absolute;
+    display: block;
+    right: 1px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.depth2.reference .box3 .webzine a::after,
+.depth2.reference .box3 .archive a::after {
+    position: absolute;
+    display: block;
+    top: 16px;
+    right: 22px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.depth2.reference .box3 .webzine a::after {
+    content: 'WEBZINE';
+}
+
+.depth2.reference .box3 .archive a::after {
+    content: 'ARCHIVE';
+}
+
+.depth2.reference .box3 a span em {
+    color: #ff8a00;
+}
+
+/* notice */
+
+.depth2.notice {
+    padding-bottom: 50px;
+}
+
+.depth2.notice .top_box {
+    position: relative;
+    width: 1200px;
+    height: 176px;
+    margin-bottom: 57px;
+    text-align: center;
+    background: url(../img/bg_mtop4.png) no-repeat center/cover;
+}
+
+.depth2.notice .top_box a {
+    position: relative;
+    display: inline-block;
+    margin: 61px 0;
+    color: #fff;
+    font-size: 36.01px;
+}
+
+.depth2.notice .link_box {
+    font-size: 0;
+}
+
+.depth2.notice .link_box > div {
+    display: inline-block;
+    width: 285px;
+    margin-top: 18px;
+}
+
+.depth2.notice .link_box > div:not(:nth-of-type(4n)) {
+    margin-right: 20px;
+}
+
+.depth2.notice .link_box > div:nth-of-type(-n + 4) {
+    margin-top: 0;
+}
+
+.depth2.notice .link_box > div a {
+    position: relative;
+    display: block;
+    padding: 7px 0;
+    border: 1px solid #d8d8d8;
+    color: #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: border 0.2s linear, color 0.2s linear;
+}
+
+.depth2.notice .link_box > div a:hover {
+    border: 1px solid #fd7a1f;
+    color: #fd7a1f;
+}
+
+.depth2.notice .link_box > div a::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    right: 13px;
+    background: url(../img/icn_plus2.png);
+    transform: translate(0, -50%);
+}
+
+/* disclosure */
+.depth2.disclosure > div {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.depth2.disclosure .inner {
+    width: 380px;
+    padding: 220px 36px 15px;
+    box-sizing: border-box;
+}
+
+.depth2.disclosure .inner:nth-of-type(1) {
+    background: #f3f0eb;
+}
+
+.depth2.disclosure .inner:nth-of-type(2) {
+    background: #e9eeef;
+}
+
+.depth2.disclosure .inner:nth-of-type(3) {
+    background: #f3f0eb;
+}
+
+.depth2.disclosure .inner:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.depth2.disclosure .inner::before,
+.depth2.disclosure .inner::after {
+    position: absolute;
+    display: block;
+    line-height: 1.2;
+    top: 12px;
+    right: 28px;
+    width: 70px;
+    font-size: 35px;
+    color: #fff;
+}
+
+.depth2.disclosure .inner::before {
+    content: '';
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+}
+
+.depth2.disclosure .inner:nth-of-type(1)::before {
+    background: url(../img/bg_nav5_1.png) center/cover;
+}
+
+.depth2.disclosure .inner:nth-of-type(1)::after {
+    content: '윤리경영';
+}
+
+.depth2.disclosure .inner div {
+    text-align: left;
+    border-radius: 5px;
+}
+
+.depth2.disclosure .inner:nth-of-type(1) div {
+    background: #fff;
+}
+
+.depth2.disclosure .inner div:not(:last-of-type) {
+    margin-bottom: 13px;
+}
+
+.depth2.disclosure .inner a {
+    display: block;
+    padding: 7px 35px;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.depth2.disclosure .inner:nth-of-type(1) a {
+    color: #695739;
+}
+
+.depth2.disclosure .inner:nth-of-type(2)::before {
+    background: url(../img/bg_nav5_2.png) center/cover;
+}
+
+.depth2.disclosure .inner:nth-of-type(2)::after {
+    content: '경영공시';
+}
+
+.depth2.disclosure .inner:nth-of-type(2) a {
+    color: #4f7178;
+}
+
+.depth2.disclosure .inner:nth-of-type(3)::before {
+    background: url(../img/bg_nav5_3.png) center/cover;
+}
+
+.depth2.disclosure .inner:nth-of-type(2) div {
+    background: #fff;
+}
+
+.depth2.disclosure .inner:nth-of-type(3) div {
+    background: #fff;
+}
+
+.depth2.disclosure .inner:nth-of-type(3) div:nth-of-type(1) a {
+    background-image: url(../img/icn_sc.png);
+    background-position: 214px center;
+}
+
+.depth2.disclosure .inner:nth-of-type(3) div:nth-of-type(2) a {
+    background-image: url(../img/icn_rd.png);
+    background-position: 204px center;
+}
+
+.depth2.disclosure .inner:nth-of-type(3)::after {
+    content: '정관규정';
+}
+
+.depth2.disclosure .inner:nth-of-type(3) a {
+    color: #695739;
+    padding: 30px 78px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* about */
+.depth2.about > div {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 376px;
+    box-sizing: border-box;
+}
+
+.depth2.about {
+    padding: 0 0 30px;
+    font-size: 0;
+}
+
+.depth2.about .inner1 {
+    padding: 206px 40px 35px;
+    background: url(../img/icn_ci_mark.png) #89d2d3 no-repeat 41px 34px / auto;
+}
+
+.depth2.about .inner div {
+    position: relative;
+    text-align: right;
+}
+
+.depth2.about .inner1::before,
+.depth2.about .inner1::after {
+    position: absolute;
+    display: block;
+}
+
+.depth2.about .inner2 .top::before,
+.depth2.about .inner2 .top::after {
+    position: absolute;
+    display: block;
+}
+
+.depth2.about .inner2 .bottom::before,
+.depth2.about .inner2 .bottom::after {
+    position: absolute;
+    display: block;
+}
+
+.depth2.about .inner3 .top::before,
+.depth2.about .inner3 .top::after {
+    position: absolute;
+    display: block;
+}
+
+.depth2.about .inner3 .bottom::before,
+.depth2.about .inner3 .bottom::after {
+    position: absolute;
+    display: block;
+}
+
+.depth2.about .inner:not(:last-of-type) {
+    margin-right: 36px;
+}
+
+.depth2.about .inner1::before {
+    content: '대전문화재단';
+    top: 90px;
+    left: 43px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+.depth2.about .inner1::after {
+    content: '';
+    width: 44px;
+    height: 2px;
+    top: 139px;
+    left: 44px;
+    background-color: #fff;
+}
+
+.depth2.about .type > div::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.depth2.about .inner div {
+    position: relative;
+    text-align: right;
+}
+
+.depth2.about .inner a {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.depth2.about .inner2 .top {
+    background: url(../img/bg_nav6_5.png) center/cover;
+}
+
+.depth2.about .inner2 .top::before {
+    content: '대전문화재단';
+    width: 100%;
+    top: 59px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.depth2.about .inner2 .top a {
+    display: block;
+    width: 100%;
+    padding: 86px 0 32px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.depth2.about .inner2 .top::after {
+    content: '';
+    width: 44px;
+    height: 2px;
+    top: 43px;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, 0);
+}
+
+.depth2.about .inner2 .bottom {
+    padding: 89px 30px 35px 59px;
+    margin-top: 36px;
+    background: url(../img/icn_give.png) #d5aed8 no-repeat 23px 22px / auto;
+}
+
+.depth2.about .inner2 .bottom::before {
+    content: '문화기부';
+    top: 37px;
+    left: 96px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.depth2.about .inner2 .bottom::after {
+    content: '';
+    width: 44px;
+    height: 2px;
+    top: 28px;
+    left: 98px;
+    background-color: #fff;
+}
+
+.depth2.about .inner3 .top {
+    padding: 93px 40px 28px 47px;
+    background: url(../img/icn_struc.png) #eac488 no-repeat 44px 26px / auto;
+}
+
+.depth2.about .inner3 .top::before {
+    content: '유관/협약기관 안내';
+    top: 41px;
+    left: 105px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.depth2.about .inner3 .bottom {
+    margin-top: 36px;
+    background: url(../img/bg_nav6_8.png) center/cover;
+}
+
+.depth2.about .inner3 .bottom::before {
+    content: '대전문화재단';
+    width: 100%;
+    top: 42px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.depth2.about .inner3 .top::after {
+    content: '';
+    width: 44px;
+    height: 2px;
+    top: 36px;
+    left: 105px;
+    background-color: #fff;
+}
+
+.depth2.about .inner3 .bottom a {
+    display: block;
+    width: 100%;
+    padding: 69px 0 17px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.depth2.about .type > div::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.depth2.about .inner3 .bottom::after {
+    content: '';
+    width: 44px;
+    height: 2px;
+    top: 26px;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, 0);
+}
+/* 햄버거 클릭메뉴 */
 nav.fix {
     background-color: #000;
 }
 
 nav > ul {
+    position: relative;
+    top: 0;
     display: flex;
     justify-content: center;
     padding: 15px 0;
-}
-
-nav.fix > ul {
-    padding-left: 37px;
 }
 
 nav > ul > li {
@@ -205,7 +1214,7 @@ nav.fix > ul > li > a {
     position: absolute;
     width: 26px;
     height: 20px;
-    top: 50%;
+    top: 37px;
     right: 65px;
     transform: translateY(-50%);
 }
@@ -487,7 +1496,7 @@ address li span {
 /******* start max-width 1599px ********/
 @media only screen and (max-width: 1599px) {
     nav > ul > li {
-        width: 15.833333%;
+        width: 11.833333%;
     }
 
     nav.fix > ul > li {
@@ -529,6 +1538,7 @@ address li span {
         width: 114px;
         top: 54%;
         left: 50%;
+        padding: 0;
         transform: translate(-50%, -50%);
     }
 
@@ -577,6 +1587,7 @@ address li span {
     .btn_nav {
         width: 23px;
         right: 4px;
+        top: 50%;
     }
 
     .btn_nav span {

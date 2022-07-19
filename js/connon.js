@@ -36,6 +36,38 @@ function scrollfix() {
 window.addEventListener('load', scrollfix);
 window.addEventListener('scroll', scrollfix);
 
+//메인 네비게이션 클릭시 div 보이기
+const navTitle = document.querySelectorAll('.nav_title');
+navTitle.forEach(function (el) {
+    el.addEventListener('click', openNav);
+});
+function openNav() {
+    navTitle.forEach((li) => {
+        li.classList.remove('on');
+    });
+    this.classList.add('on');
+}
+//닫기버튼
+const navClose = document.querySelectorAll('.nav_close');
+navClose.forEach(function (el) {
+    el.addEventListener('click', function () {
+        navTitle.forEach((li) => {
+            li.classList.remove('on');
+        });
+    });
+});
+//마우스가 벗어나면 자동으로 사라짐
+// const depth2 = document.querySelectorAll('.depth2');
+// const nav = document.getElementById('mainNav');
+
+// depth2.forEach((el) => {
+//     el.addEventListener('mouseout', function () {
+//         navTitle.forEach((li) => {
+//             li.classList.remove('on');
+//         });
+//     });
+// });
+
 //top버튼
 //top버튼 클릭실행
 let cont = document.querySelector('#for_totop');

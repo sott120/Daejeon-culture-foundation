@@ -1,27 +1,15 @@
 /* swiper1 */
 .mySwiper1 {
-    max-width: 893.3333px !important;
     padding-top: 50px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.mySwiper1 .swiper-wrapper {
-    width: 100% !important;
-}
-
-.mySwiper1 .swiper {
-    width: 75%;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
 .mySwiper1 .swiper-slide {
-    width: 280px !important;
-    margin-right: 26.6667px !important;
+    width: 280px;
+    height: 420px;
     text-align: center;
     font-size: 18px;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,30 +38,16 @@
 }
 
 .swiper-pagination {
-    max-width: 1920px !important;
     bottom: -85px !important;
 }
 
 .swiper-pagination3 {
     position: absolute !important;
-    max-width: 1920px !important;
     bottom: -85px !important;
     left: calc(50% - 41px) !important;
 }
 
-.swiper-pagination-bullet {
-    width: 14px !important;
-    height: 14px !important;
-    font-size: 0 !important;
-    border: 2px solid #7d7d7d !important;
-    border-radius: 20px !important;
-    box-sizing: border-box !important;
-    margin-right: 5px !important;
-    background: transparent !important;
-    margin-left: 0 !important;
-    margin-right: 5px !important;
-}
-
+.swiper-pagination-bullet,
 .swiper-pagination3-bullet {
     width: 14px !important;
     height: 14px !important;
@@ -87,11 +61,7 @@
     margin-right: 5px !important;
 }
 
-.swiper-pagination-bullet-active {
-    width: 42px !important;
-    background-color: #7d7d7d !important;
-}
-
+.swiper-pagination-bullet-active,
 .swiper-pagination3-bullet-active {
     width: 42px !important;
     background-color: #7d7d7d !important;
@@ -102,20 +72,11 @@
     overflow: hidden;
 }
 
-.mySwiper3 .swiper-wrapper {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .mySwiper3 .swiper-slide {
-    width: 279px !important;
-    display: flex;
-    justify-content: space-between;
     margin-top: 115px;
 }
 
 .mySwiper3 .swiper-slide div {
-    width: 279px;
     height: 420px;
     background-color: #fff;
     padding: 29px 20px 0;
@@ -141,7 +102,7 @@
     box-sizing: border-box;
     border-radius: 30px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     background-color: #fff;
     transition: border 0.35s linear;
@@ -162,7 +123,7 @@
     display: block;
     margin: 50px 0 0;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000;
     text-align: center;
     overflow: hidden;
@@ -668,7 +629,7 @@ span.type4 {
     display: block;
 }
 
-/* culture */
+/* ul culture */
 
 .culture_wrap {
     position: relative;
@@ -688,58 +649,58 @@ span.type4 {
     background-position: 106% 149px;
 }
 
-.culture {
+ul.culture {
     display: flex;
     margin-top: 58px;
     justify-content: space-between;
 }
 
-.culture > li {
+ul.culture > li {
     width: 200px;
     border-right: 1px solid #fff;
     transform: perspective(2000px) rotateY(90deg);
     transition: rotate 0.2s linear, transform 0.4s linear;
 }
 
-.culture > li:nth-child(1) {
+ul.culture > li:nth-child(1) {
     transition-delay: 0s;
 }
 
-.culture > li:nth-child(2) {
+ul.culture > li:nth-child(2) {
     transition-delay: 0.2s;
 }
 
-.culture > li:nth-child(3) {
+ul.culture > li:nth-child(3) {
     transition-delay: 0.4s;
 }
 
-.culture > li:nth-child(4) {
+ul.culture > li:nth-child(4) {
     transition-delay: 0.6s;
 }
 
-.culture > li:nth-child(5) {
+ul.culture > li:nth-child(5) {
     transition-delay: 0.8s;
 }
 
-.culture > li:nth-child(6) {
+ul.culture > li:nth-child(6) {
     transition-delay: 1s;
 }
 
-.culture > li.ani {
+ul.culture > li.ani {
     transform: perspective(2000px) rotateY(0deg);
     /* animation: rotate 0.6s linear; */
 }
 
-.culture > li:hover a::before {
+ul.culture > li:hover a::before {
     background-color: #255e8f;
 }
 
-.culture a {
+ul.culture a {
     position: relative;
     display: block;
 }
 
-.culture a::before {
+ul.culture a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -747,7 +708,7 @@ span.type4 {
     background-color: rgba(49 49 49 / 0.8);
 }
 
-.culture p {
+ul.culture p {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -758,11 +719,11 @@ span.type4 {
     color: #fff;
 }
 
-.culture span {
+ul.culture span {
     display: block;
 }
 
-.culture img {
+ul.culture img {
     position: relative;
     /* 또 릴레이티브 왜...? 겹쳐주려고 높이가 있는 이미지에
     릴레이티브 나머지 앱솔루트*/
@@ -793,7 +754,8 @@ span.type4 {
     background-color: #7a7a7a;
 }
 
-.link_top {
+.link_top,
+.link_bot {
     display: flex;
     justify-content: center;
     border-top: 1px solid rgba(207, 207, 207);
@@ -802,14 +764,16 @@ span.type4 {
     /* 같이 포지션이 있으면 앞으로 나옴 왜지..? */
 }
 
-.link_top > div {
+.link_top > div,
+.link_bot > div {
     width: 200px;
     line-height: 60px;
     background-color: #7a7a7a;
     text-align: center;
 }
 
-.link_top > ul {
+.link_top > ul,
+.link_bot > ul {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -818,8 +782,22 @@ span.type4 {
     width: 1000px;
 }
 
-.link_top > ul > li {
+.link_top > ul > li,
+.link_bot > ul > li {
     margin-right: 65px;
+}
+
+.link_bot li:nth-child(4) {
+    margin-right: 73px;
+}
+
+.link_top > ul > .btn_box {
+    margin-right: 0px;
+}
+
+.link_top > ul > li img,
+.link_bot > ul > li img {
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 1510px) {
@@ -832,27 +810,25 @@ span.type4 {
 /******* start max-width 1200px ********/
 
 @media only screen and (max-width: 1199px) {
-    /* (변경점) 스와이퍼1 반응형 */
+    .bnr_list {
+        flex-flow: row nowrap;
+        padding-top: 0;
+    }
+
+    .bnr_fixed {
+        display: none;
+    }
+
+    /* mySwiper1 */
     .mySwiper1 {
         overflow: visible;
         padding-top: 25px;
         box-sizing: border-box;
-        max-width: 100% !important;
-    }
-
-    .mySwiper1 .swiper-wrapper {
-        width: 70% !important;
-    }
-
-    .mySwiper1 .swiper {
-        width: 75%;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        width: 100%;
     }
 
     .mySwiper1 .swiper-slide {
-        width: 33.3333% !important;
-        margin-right: 12px !important;
+        height: auto;
     }
 
     .mySwiper1 .swiper-slide:hover img {
@@ -863,24 +839,16 @@ span.type4 {
         position: relative !important;
         z-index: 10 !important;
         bottom: -14px !important;
-        left: -10% !important;
     }
 
     .swiper-pagination3 {
         position: relative !important;
         z-index: 10 !important;
-        bottom: -14px !important;
-        left: calc(50% - 64px) !important;
+        bottom: -16px !important;
+        left: calc(50% - 41px) !important;
     }
 
-    .swiper-pagination-bullet {
-        width: 8px !important;
-        height: 8px !important;
-        margin-left: 0 !important;
-        margin-right: 3px !important;
-        border: 1px solid #7d7d7d !important;
-    }
-
+    .swiper-pagination-bullet,
     .swiper-pagination3-bullet {
         width: 8px !important;
         height: 8px !important;
@@ -889,10 +857,7 @@ span.type4 {
         border: 1px solid #7d7d7d !important;
     }
 
-    .swiper-pagination-bullet-active {
-        width: 22px !important;
-    }
-
+    .swiper-pagination-bullet-active,
     .swiper-pagination3-bullet-active {
         width: 22px !important;
     }
@@ -903,23 +868,17 @@ span.type4 {
         padding-bottom: 40px;
     }
 
-    /* (변경점) 스와이퍼1 반응형 끝 */
-
-    /* (변경점) 스와이퍼3 반응형*/
+    /* mySwiper3*/
     .mySwiper3 {
         padding-top: 25px;
     }
 
     .mySwiper3 .swiper-slide {
-        width: 66.5625vmin !important;
-        min-width: 0;
         height: 211px;
         margin-top: 0px;
     }
 
     .mySwiper3 .swiper-slide div {
-        width: 66.5625vmin !important;
-        min-width: 0;
         height: 211px;
         padding: 15px 20px 0;
     }
@@ -954,9 +913,7 @@ span.type4 {
         font-size: 13px;
     }
 
-    /* (변경점) 스와이퍼3 반응형*/
-
-    /* (변경점) 공지사항/입찰/채용 */
+    /* 공지사항/입찰/채용 */
     .bnr_notice {
         padding: 0 2.5vmin 25px;
         margin: 25px 0 0;
@@ -1016,9 +973,7 @@ span.type4 {
         display: none;
     }
 
-    /* (변경점) 공지사항/입찰/채용 끝 */
-
-    /* (변경점) 탭메뉴 a태그 제거 */
+    /* tab */
     .tab_third > li {
         font-size: 3.125vmin;
         padding: 6px 0;
@@ -1032,20 +987,6 @@ span.type4 {
         font-size: 3.90625vmin;
     }
 
-    /* (변경점) 탭메뉴 a태그 제거 끝 */
-
-    /* (변경점) 고정 배너 반응형 삭제 */
-    .bnr_list {
-        width: 133%;
-        flex-flow: row nowrap;
-        padding-top: 0;
-    }
-
-    .bnr_fixed {
-        display: none;
-    }
-
-    /* (변경점) 고정 배너 반응형 삭제 끝 */
     .program::before {
         display: none;
     }
@@ -1189,36 +1130,36 @@ span.type4 {
         display: none;
     }
 
-    .culture_wrap {
+    ul.culture_wrap {
         background-color: #f3f3f5;
         padding-bottom: 0;
     }
 
-    .culture_wrap::before {
+    ul.culture_wrap::before {
         display: none;
     }
 
-    .culture {
+    ul.culture {
         flex-wrap: wrap;
         margin-top: 20px;
     }
 
-    .culture > li {
+    ul.culture > li {
         width: calc(50% - 1px);
     }
 
-    .culture .culture img {
+    ul.culture .culture img {
         position: absolute;
     }
 
-    .culture a {
+    ul.culture a {
         display: block;
         overflow: hidden;
         height: 24.6875vmin;
         font-size: 4.375vmin;
     }
 
-    .culture a::before {
+    ul.culture a::before {
         background-color: #255e8f;
     }
 }
