@@ -103,9 +103,8 @@ function tabOn(e) {
     sbLi.forEach(function (el) {
         el.classList.add('temp_opa');
     });
-    let aaa = e.currentTarget.dataset.code;
-    console.log(aaa);
-    switch (aaa) {
+    let dataNum = e.currentTarget.dataset.code;
+    switch (dataNum) {
         case 'A30-A':
             type1.forEach(function (el) {
                 el.classList.remove('temp_opa');
