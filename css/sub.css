@@ -108,7 +108,7 @@ section:not(:first-child) {
     display: flex;
 }
 .sub_icon > a,
-.sub_icon > span {
+.sub_icon > div {
     width: 60px;
     height: 39px;
     background-repeat: no-repeat;
